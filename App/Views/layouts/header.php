@@ -9,7 +9,7 @@
                 <a class="navbar-sm-brand text-light text-decoration-none" href="tel:088.699.2212">088-699-2212</a>
             </div>
             <div>
-                <?= auth() ? '<b class="text-light mr-5 text-"> Hello ' . auth()->username . ' !</b>' : '' ?>
+                <?= auth() ? '<b class="text-light mr-5"> Hello ' . auth()->username . ' !</b>' : '' ?>
 
             </div>
         </div>
@@ -66,7 +66,7 @@
                 <?php if (auth()) : ?>
                     <div class="user">
                         <a class="nav-icon position-relative text-decoration-none" href="/profile">
-                            <i class="fa fa-fw fa-user mr-3"></i>
+                            <i class="fa fa-fw fa-user mr-3"></i> 
                         </a>
                         <a class="nav-icon position-relative text-decoration-none" href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#logoutModal">
                             <i class="fa fa-fw fa-sign-out-alt mr-3"></i>

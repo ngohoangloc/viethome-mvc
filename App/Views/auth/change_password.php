@@ -19,7 +19,7 @@
 
                             <div class="form-outline mb-4">
                                 <label class="form-label" for="old_password">Old password</label>
-                                <input type="password" id="old_password" name="old_password" class="form-control form-control-lg <?= isset($errors['old_password']) ? 'is-invalid' : '' ?>" value="<?= $params['old_password'] ?? null ?>" required />
+                                <input type="password" id="old_password" name="old_password" class="form-control form-control-lg border border-success <?= isset($errors['old_password']) ? 'is-invalid' : '' ?>" value="<?= $params['old_password'] ?? null ?>" required />
                                 <div class="text-danger">
                                     <?= $errors['old_password'] ?? null; ?>
                                 </div>
@@ -27,7 +27,7 @@
                             
                             <div class="form-outline mb-4">
                                 <label class="form-label" for="new_password">New password</label>
-                                <input type="password" id="new_password" name="new_password" class="form-control form-control-lg <?= isset($errors['new_password']) ? 'is-invalid' : '' ?>" value="<?= $params['new_password'] ?? null ?>" required />
+                                <input type="password" id="new_password" name="new_password" class="form-control form-control-lg border border-success <?= isset($errors['new_password']) ? 'is-invalid' : '' ?>" value="<?= $params['new_password'] ?? null ?>" required />
                                 <div class="text-danger">
                                     <?= $errors['new_password'] ?? null; ?>
                                 </div>
@@ -35,7 +35,7 @@
 
                             <div class="form-outline mb-4">
                                 <label class="form-label" for="confirm_new_password">Confirm new password</label>
-                                <input type="password" id="confirm_new_password" name="confirm_new_password" class="form-control form-control-lg <?= isset($errors['confirm_new_password']) ? 'is-invalid' : '' ?>" value="<?= $params['confirm_new_password'] ?? null ?>" required />
+                                <input type="password" id="confirm_new_password" name="confirm_new_password" class="form-control form-control-lg border border-success <?= isset($errors['confirm_new_password']) ? 'is-invalid' : '' ?>" value="<?= $params['confirm_new_password'] ?? null ?>" required />
                                 <div class="text-danger">
                                     <?= $errors['confirm_new_password'] ?? null; ?>
                                 </div>

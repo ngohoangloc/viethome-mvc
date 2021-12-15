@@ -25,13 +25,13 @@
 
                             <div class="form-outline mb-4">
                                 <label class="form-label" for="username">Username</label>
-                                <input type="text" id="username" name="username" class="form-control form-control-lg" required/>
+                                <input type="text" id="username" name="username" class="form-control form-control-lg border border-success" required/>
 
                             </div>
 
                             <div class="form-outline mb-4">
                                 <label class="form-label" for="password">Password</label>
-                                <input type="password" id="password" name="password"class="form-control form-control-lg" required/>
+                                <input type="password" id="password" name="password"class="form-control form-control-lg border border-success" required/>
                             </div>
                             <div class="text-end">
                                 <a href="" class="stretched-link text-success" style="position:relative;text-decoration: none;">Forgot password ?</a>

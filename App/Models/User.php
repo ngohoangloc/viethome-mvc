@@ -8,14 +8,13 @@ class User extends Model
 {
     use SoftDeletes;
 
-    protected $table = 'users';
+    protected $table = 'vh_users';
 
     protected $primaryKey = 'id';
 
     public $timestamps = true;
 
     protected $filltable = [
-        'id',
         'username',
         'email',
         'password'

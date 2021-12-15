@@ -24,6 +24,9 @@ Router::post('/change-password', 'App\Controllers\Auth\ChangePasswordController@
 
 Router::get('/profile', 'App\Controllers\UserController@showProfile');
 
+Router::get('/profile/edit', 'App\Controllers\UserController@showUpdateProfile');
+Router::post('/profile/edit', 'App\Controllers\UserController@updateProfile');
+
 Router::error(function () {
     echo '404 :: Page Not Found';
 });

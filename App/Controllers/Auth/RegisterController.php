@@ -18,7 +18,6 @@ class RegisterController extends BaseController
             $errors = [];
             return $this->render('auth/register');
         }
-        
     }
 
     public function register()
@@ -31,7 +30,7 @@ class RegisterController extends BaseController
     {
         return [
             'username'          =>  $this->request->post('username'),
-            'email'          =>  $this->request->post('email'),
+            'email'             =>  $this->request->post('email'),
             'password'          =>  $this->request->post('password'),
             'confirm_password'  =>  $this->request->post('confirm_password'),
         ];

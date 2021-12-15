@@ -21,7 +21,7 @@
 
                             <div class="form-outline mb-4">
                                 <label class="form-label" for="username">Username</label>
-                                <input type="text" id="username" name="username" class="form-control form-control-lg <?= isset($errors['username']) ? 'is-invalid' : '' ?>" value="<?= $params['username'] ?? null ?>" required/>
+                                <input type="text" id="username" name="username" class="form-control form-control-lg border border-success <?= isset($errors['username']) ? 'is-invalid' : '' ?>" value="<?= $params['username'] ?? null ?>" required/>
                                 <div class="text-danger">
                                     <?= $errors['username'] ?? null; ?>
                                 </div>
@@ -29,7 +29,7 @@
 
                             <div class="form-outline mb-4">
                                 <label class="form-label" for="email">Email</label>
-                                <input type="email" id="email" name="email" class="form-control form-control-lg <?= isset($errors['email']) ? 'is-invalid' : '' ?>" value="<?= $params['email'] ?? null ?>" required/>
+                                <input type="email" id="email" name="email" class="form-control form-control-lg border border-success <?= isset($errors['email']) ? 'is-invalid' : '' ?>" value="<?= $params['email'] ?? null ?>" required/>
                                 <div class="text-danger">
                                     <?= $errors['email'] ?? null; ?>
                                 </div>
@@ -37,7 +37,7 @@
 
                             <div class="form-outline mb-4">
                                 <label class="form-label" for="password">Password</label>
-                                <input type="password" id="password" name="password" class="form-control form-control-lg <?= isset($errors['password']) ? 'is-invalid' : '' ?>" value="<?= $params['password'] ?? null ?>" required/>
+                                <input type="password" id="password" name="password" class="form-control form-control-lg border border-success <?= isset($errors['password']) ? 'is-invalid' : '' ?>" value="<?= $params['password'] ?? null ?>" required/>
                                 <div class="text-danger">
                                     <?= $errors['password'] ?? null; ?>
                                 </div>
@@ -45,7 +45,7 @@
 
                             <div class="form-outline mb-4">
                                 <label class="form-label" for="confirm_password">Confirm password</label>
-                                <input type="password" id="confirm_password" name="confirm_password" class="form-control form-control-lg <?= isset($errors['confirm_password']) ? 'is-invalid' : '' ?>" value="<?= $params['confirm_password'] ?? null ?>" required/>
+                                <input type="password" id="confirm_password" name="confirm_password" class="form-control form-control-lg border border-success <?= isset($errors['confirm_password']) ? 'is-invalid' : '' ?>" value="<?= $params['confirm_password'] ?? null ?>" required/>
                                 <div class="text-danger">
                                     <?= $errors['confirm_password'] ?? null; ?>
                                 </div>

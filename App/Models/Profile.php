@@ -10,7 +10,7 @@ class Profile extends Model
 {
     use SoftDeletes;
 
-    protected $table = 'profiles';
+    protected $table = 'vh_profiles';
     
     protected $primaryKey = 'id';
 

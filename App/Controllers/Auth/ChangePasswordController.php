@@ -31,6 +31,9 @@ class ChangePasswordController extends BaseController
         if(!preg_match($pattern, $params['new_password'])){
             $errors['new_password'] = 'Password must contains at least one capitalize letter, number and at least 6 characters long allowed!';
         }
+        if($params['old_password'] == $params['new_password']){
+            $errors['new_password'] = 'New password cannot be the same as old password!';
+        }
         if($params['new_password'] !== $params['confirm_new_password']){
             $errors['confirm_new_password'] = 'New password does not match!';
         }

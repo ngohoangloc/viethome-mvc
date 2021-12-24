@@ -5,7 +5,6 @@
     <div class="container ">
         <div class="col ">
             <div class="card">
-
                 <h2 class="pt-3 pb-3 text-center text-success">UPDATE YOUR PROFILE</h2>
 
                 <div class="card-body">
@@ -15,7 +14,7 @@
                                 <h6 class="mb-0">First name</h6>
                             </div>
                             <div class="col-sm-9 text-secondary">
-                                <input type="text" id="firstname" name="firstname" class="form-control form-control-lg border border-success <?= isset($errors['firstname']) ? 'is-invalid' : '' ?>" value="<?= $params['firstname'] ?? null ?>" required />
+                                <input type="text" id="firstname" name="firstname" class="form-control form-control-lg border border-success" value="<?= $params['firstname'] ?? null ?>" required />
                                 <div class="text-danger">
                                     <?= $errors['firstname'] ?? null; ?>
                                 </div>
@@ -27,21 +26,9 @@
                                 <h6 class="mb-0">Last name</h6>
                             </div>
                             <div class="col-sm-9 text-secondary">
-                                <input type="text" id="lastname" name="lastname" class="form-control form-control-lg border border-success <?= isset($errors['lastname']) ? 'is-invalid' : '' ?>" value="<?= $params['lastname'] ?? null ?>" required />
+                                <input type="text" id="lastname" name="lastname" class="form-control form-control-lg border border-success" value="<?= $params['lastname'] ?? null ?>" required />
                                 <div class="text-danger">
                                     <?= $errors['lastname'] ?? null; ?>
-                                </div>
-                            </div>
-                        </div>
-                        <hr>
-                        <div class="row">
-                            <div class="col-sm-3">
-                                <h6 class="mb-0">Email</h6>
-                            </div>
-                            <div class="col-sm-9 text-secondary">
-                                <input type="email" id="email" name="email" class="form-control form-control-lg border border-success <?= isset($errors['email']) ? 'is-invalid' : '' ?>" value="<?= $params['email'] ?? null ?>" required />
-                                <div class="text-danger">
-                                    <?= $errors['email'] ?? null; ?>
                                 </div>
                             </div>
                         </div>
@@ -51,7 +38,7 @@
                                 <h6 class="mb-0">Location</h6>
                             </div>
                             <div class="col-sm-9 text-secondary">
-                                <input type="text" id="location" name="location" class="form-control form-control-lg border border-success <?= isset($errors['location']) ? 'is-invalid' : '' ?>" value="<?= $params['location'] ?? null ?>" required />
+                                <input type="text" id="location" name="location" class="form-control form-control-lg border border-success" value="<?= $params['location'] ?? null ?>" required />
                                 <div class="text-danger">
                                     <?= $errors['location'] ?? null; ?>
                                 </div>

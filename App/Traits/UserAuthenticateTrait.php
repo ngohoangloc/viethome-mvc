@@ -94,7 +94,4 @@ trait UserAuthenticateTrait
 
         return $updatePass;
     }
-
-    
-
 }
